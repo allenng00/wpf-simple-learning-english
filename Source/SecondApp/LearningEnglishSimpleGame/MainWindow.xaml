@@ -1,0 +1,52 @@
+﻿<Window x:Class="LearningEnglishSimpleGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearningEnglishSimpleGame"
+        mc:Ignorable="d"
+      Title="Learning English Game" Height="830.4" Width="847.2" WindowStartupLocation="CenterScreen" UseLayoutRounding="True">
+
+    <Window.Icon>
+        <BitmapImage UriSource="Images/LearnEngIcon.ico" RenderOptions.BitmapScalingMode="HighQuality"/>
+    </Window.Icon>
+
+    <Canvas>
+        <Image Name="questionImage" Height="477" Width="377" Canvas.Left="102" Canvas.Top="138" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+
+        <Label Name="countquestionLabel" Height="100" Width="400" VerticalAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontSize="50" FontFamily="Segoe UI Black" Canvas.Left="79" Canvas.Top="33">
+        </Label>
+
+        <Image Name="timerImage" Height="154" Width="149" Canvas.Left="673" Canvas.Top="108" RenderTransformOrigin="0.574,0.473" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="UniformToFill" Source="Images/SandClockIcon.png"/>
+
+        <Border Height="60" Width="148" Canvas.Left="655" Canvas.Top="288" BorderBrush="Gray" BorderThickness="2" >
+            <TextBlock Name="timerTextBlock"  Foreground="Red" FontSize="36" FontWeight="Bold" FontFamily="Harlow Solid Italic" TextAlignment="Center" HorizontalAlignment="Center">
+            </TextBlock>
+        </Border>
+
+        <Image Name="scoreImage" Height="135" Width="133" Canvas.Left="669" Canvas.Top="394" RenderTransformOrigin="0.574,0.473" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="UniformToFill" Source="Images/Score.png"/>
+
+        <Border Height="60" Width="148" Canvas.Left="655" Canvas.Top="528" BorderBrush="Gray" BorderThickness="2" >
+            <TextBlock Name="scoreTextBlock"  Foreground="Red" FontSize="36" FontWeight="Bold" FontFamily="Harlow Solid Italic" TextAlignment="Center" HorizontalAlignment="Center">
+            </TextBlock>
+        </Border>
+
+        <StackPanel Orientation="Horizontal" Height="136" Width="534" Background="Transparent" Canvas.Left="33" Canvas.Top="653" >
+
+            <Border BorderThickness="6" BorderBrush="Transparent" Background="Cyan" CornerRadius="20" Width="247" Margin="10" RenderTransformOrigin="1.236,0.99" >
+
+                <Button x:Name="answer01Button" Click="answer01Button_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Foreground="White"            Margin="3.6,3.6,3.8,3.6" FontFamily="Trebuchet MS" FontSize="30" HorizontalContentAlignment="Center" Height="90" Width="227">Ans01
+                </Button>
+
+            </Border>
+
+            <Border BorderThickness="6" BorderBrush="Transparent" Background="Cyan" CornerRadius="20" Width="247" Margin="10,10,10,10.2" RenderTransformOrigin="1.236,0.99">
+
+                <Button x:Name="answer02Button" Click="answer02Button_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Foreground="White" FontFamily="Trebuchet MS" FontSize="30"  HorizontalContentAlignment="Center" Height="90" Margin="3.6,3.6,3.8,9.6" Width="227" >Ans02
+                </Button>
+
+            </Border>
+
+        </StackPanel>
+    </Canvas>
+</Window>

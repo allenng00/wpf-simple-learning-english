@@ -1,0 +1,15 @@
+Viết trò chơi đoán hình.
+
+Luật chơi: Có 10 câu hỏi. Mỗi câu hỏi đưa ra 1 hình và yêu cầu người chơi trong vòng 30s chọn 1 trong 2 nút bấm để quyết định hình này là gì. (Hoặc chơi kiểu ngược lại, Hiện một chữ và 2 hình, lựa chọn hình đúng.)
+
+Ví dụ bạn đưa ra hình một cầu thủ bóng đá (Messi) và đưa ra 2 lựa chọn là Ronaldo và Messi.
+
+Nếu người dùng chọn đúng thì điểm tăng lên 1. Nếu không chọn kịp trước mà hết 30s 
+
+Nếu sai thì không có điểm.
+
+Cần hiển thị số điện tại câu hiện có, đang ở câu số mấy trên tổng số câu.
+
+Tuy mỗi lượt chơi là 10 câu hỏi nhưng bạn sẽ cần tối thiểu ngân hàng câu hỏi gồm 30 câu nhé.
+
+Hệ quả là số lượng hình lưu sẽ rất lớn, cần phải để nó ở bên ngoài chứ ko nhúng vào file exe nha.
